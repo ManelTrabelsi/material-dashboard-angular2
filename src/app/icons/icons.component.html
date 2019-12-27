@@ -1,0 +1,43 @@
+
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="card card-plain">
+          <div class="card-header card-header-danger">
+              <h4 class="card-title">Table des Clients</h4>
+              
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class=" text-primary">
+                        <th>
+                            id
+                        </th>
+                        <th>
+                            gender
+                        </th>
+                        <th>
+                            address
+                        </th>
+                        <th>
+                            deliveryAddress
+                        </th>
+                       
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let Customer of listCustomer ">
+                          <td>{{Customer.id}}</td>
+                          <td>{{Customer.gender}}</td>
+                          <td>{{Customer.address}}</td>
+                          <td>{{Customer.deliveryAddress}}</td>
+                          
+                          <td><button (click)="delete(Customer)">Delete</button></td>
+                      </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+          
+      </div>
+  </div>
+</div>

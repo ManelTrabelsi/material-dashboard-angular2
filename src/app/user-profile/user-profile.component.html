@@ -1,0 +1,93 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Ajouter un Produit</h4>
+                      
+                  </div>
+                  <form noValidate>
+                    <div class="row">
+        
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>designation</label>
+                          <input type="text" class="form-control" name="designation" required
+                                 [(ngModel)]="Produittosave.designation">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">description</label>
+                          <input type="email" class="form-control" name="description" required
+                                 [(ngModel)]="Produittosave.description">
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>quantity</label>
+                          <input  type="text" class="form-control"   name="quantity"required
+                                  [(ngModel)]="Produittosave.quantity">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>price</label>
+                          <input type="text" class="form-control" name="price" required
+                                 [(ngModel)]="Produittosave.price">
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>seller</label>
+                          <input type="text" class="form-control" name="seller"  required
+                                 [(ngModel)]="Produittosave.seller">
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>subCategory</label>
+                          <input type="text" class="form-control" name="subCategory" required
+                                 [(ngModel)]="Produittosave.subCategory">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>category</label>
+                          <input type="text" class="form-control" name=" category"  required
+                                 [(ngModel)]="Produittosave.category">
+                        </div>
+                      </div>
+        
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>About </label>
+                          <textarea rows="5" class="form-control" placeholder="Here can be your description"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit"  (click)="saveProduit()" class="btn btn-info btn-fill pull-right">submit</button>
+                    <div class="clearfix"></div>
+                  </form>
+                   
+                
+              </div>
+          </div>
+         
+          
+      </div>
+  </div>
+</div>

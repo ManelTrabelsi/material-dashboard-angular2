@@ -1,0 +1,53 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">table de produits</h4>
+                      <p class="card-category"> Here is a subtitle for this table</p>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                    designation
+                                  </th>
+                                  <th>
+                                    description
+                                  </th>
+                                  <th>
+                                    quantity
+                                  </th>
+                                  <th>
+                                    price
+                                  </th>
+                                  <th>
+                                    seller
+                                  </th>
+                                  <th>
+                                    subCategory
+                                  </th>
+                                  <th> category</th>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor="let Produit of listProduit ">
+                                    <td>{{Produit.designation}}</td>
+                                    <td>{{Produit.description}}</td>
+                                    <td>{{Produit.quantity}}</td>
+                                    <td>{{Produit.price}}</td>
+                                    <td>{{Produit.seller}}</td>
+                                    <td>{{Produit.subCategory}}</td>
+                                    <td>{{Produit.category}}</td>
+                                    <td><button (click)="delete(Produit)">Delete</button></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                            </div>
+                            </div>
+          </div>
+      </div>
+      </div>
+      </div>
